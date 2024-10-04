@@ -3,13 +3,32 @@
 	<meta charset="UTF-8">
 	<title>Christmas Button</title>
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="styles/style.css">   
+    <link rel="stylesheet" href="styles/style.css"> 
+    <script src="scripts/main.js"></script>  
 </head>
 <body>
 	<div class="bg">
 		<div class="centerer">
-			<a href="#" class="button">Cartas a los reyes</a>
+            <a href="#" class="button" onclick="acceso()">Cartas a los reyes</a>
 		</div>
 	</div>
+    <div id="modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <form>
+                <div class="form-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="form-group" style="text-align:center;">
+                    <button class="Aceptar" type="button" onclick="submitForm()">Acceder</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
