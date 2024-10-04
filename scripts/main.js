@@ -3,28 +3,16 @@ document.getElementById('form-carta').addEventListener('submit', function(event)
     // Lógica para guardar la carta
 });
 
-function agregarRegalo() {
-    const regalosDiv = document.getElementById('regalos');
-    const nuevoRegalo = document.createElement('div');
-    nuevoRegalo.innerHTML = `
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" required>
-        <label for="descripcion">Descripción:</label>
-        <input type="text" name="descripcion" required>
-        <label for="imagen">Imagen (URL):</label>
-        <input type="text" name="imagen">
-        <label for="url">URL:</label>
-        <input type="text" name="url">
-    `;
-    regalosDiv.appendChild(nuevoRegalo);
+function brillo() {
+    // Lógica para agregar brillo al objeto h1 de clase golden-text
+    const goldenTextElements = document.querySelectorAll('.golden-text');
+    goldenTextElements.forEach(element => {
+        element.style.transition = 'text-shadow 0.5s ease-in-out, color 0.5s ease-in-out';
+        element.style.textShadow = '2px 2px 8px #FF0000';
+        element.style.color = 'yellow';
+        setTimeout(() => {
+            element.style.textShadow = '';
+            element.style.color = '';
+        }, 1000);
+    });
 }
-// script.js
-document.addEventListener('DOMContentLoaded', () => {
-    const text = document.querySelector('.christmas-text');
-    text.addEventListener('mouseover', () => {
-        text.style.color = '#00ff00';
-    });
-    text.addEventListener('mouseout', () => {
-        text.style.color = '#ff0000';
-    });
-});
