@@ -1,18 +1,21 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    background-color: #b2f3d1;
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: #ff6347;
     color: white;
     text-align: center;
     padding: 1em 0;
 }
+
 .container {
     padding: 1em;
 }
+
 .card {
     background-color: white;
     border-radius: 8px;
@@ -20,9 +23,59 @@ header {
     margin-bottom: 1em;
     padding: 1em;
 }
+
 @media (min-width: 600px) {
     .container {
         max-width: 600px;
         margin: 0 auto;
+    }
+}
+
+/* styles.css */
+.cabecera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('images/Cabecera2.webp'); /* Ruta a la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el div */
+    background-position: center; /* Centra la imagen en el div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%; /* Ancho del div */
+    height: 100vh; /* Altura del div */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.golden-text {
+
+    background: transparent;
+    /* Fondo transparente */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #ffd700;
+    /* Color del texto */
+    font-size: 2em;
+    font-family: 'Pacifico', cursive;
+    /* Fuente decorativa */
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000, 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 15px #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5), 0 0 20px rgba(255, 215, 0, 0.3), 0 0 30px rgba(255, 215, 0, 0.2);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        text-shadow: 1px 1px 2px #000000, 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 15px #ffd700;
+    }
+
+    50% {
+        text-shadow: 1px 1px 2px #000000, 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+    }
+
+    100% {
+        text-shadow: 1px 1px 2px #000000, 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 15px #ffd700;
     }
 }

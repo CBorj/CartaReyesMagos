@@ -18,3 +18,13 @@ function agregarRegalo() {
     `;
     regalosDiv.appendChild(nuevoRegalo);
 }
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const text = document.querySelector('.christmas-text');
+    text.addEventListener('mouseover', () => {
+        text.style.color = '#00ff00';
+    });
+    text.addEventListener('mouseout', () => {
+        text.style.color = '#ff0000';
+    });
+});
