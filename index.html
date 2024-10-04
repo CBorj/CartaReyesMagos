@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas a los Reyes Magos</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Cartas a los Reyes Magos</h1>
+    </header>
+    <main>
+        <section id="cartas">
+            <!-- Aquí se mostrarán las cartas -->
+        </section>
+        <section id="crear-carta">
+            <h2>Crear o Editar Carta</h2>
+            <form id="form-carta">
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+                <h3>Lista de Regalos</h3>
+                <div id="regalos">
+                    <!-- Aquí se añadirán los regalos -->
+                </div>
+                <button type="button" onclick="agregarRegalo()">Agregar Regalo</button>
+                <button type="submit">Guardar Carta</button>
+            </form>
+        </section>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
